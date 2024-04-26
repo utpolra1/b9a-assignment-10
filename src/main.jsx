@@ -18,6 +18,7 @@ import Home from './Components/Home/Home.jsx';
 import AllArtCraft from './Components/CardIteams/AllArtCraft.jsx';
 import MyCart from './Components/CardIteams/MyCart.jsx';
 import CardDetails from './Components/CardIteams/CardDetails.jsx';
+import About from './Components/User/About.jsx';
 
 
 const router = createBrowserRouter([
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path:"carddetails/:_id",
         element:<CardDetails></CardDetails>
+      },
+      {
+        path:"/about",
+        element:<About></About>
       }
     ]
   },

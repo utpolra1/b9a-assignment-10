@@ -39,6 +39,7 @@ const Navbar = () => {
               <NavLink to="/allArt&craft">All Art & craft item</NavLink>
               <NavLink to="/mycart">My Art&Craft List</NavLink>
               <NavLink to="/addcraft">Add Craft Item</NavLink>
+              <NavLink to="about">Profile</NavLink>
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">daisyUI</a>
@@ -49,6 +50,7 @@ const Navbar = () => {
             <NavLink to="/allArt&craft">All Art & craft item</NavLink>
             <NavLink to="/mycart">My Art&Craft List</NavLink>
             <NavLink to="/addcraft">Add Craft Item</NavLink>
+            <NavLink to="about">Profile</NavLink>
           </ul>
         </div>
         <div className="navbar-end text-2xl font-bold mr-4">
@@ -57,7 +59,7 @@ const Navbar = () => {
               <div role="" className="">
                 <div className="w-10 rounded-full">
                   <div className="tooltip" data-tip={user.displayName}>
-                    <button className="">
+                    <button className="avatar online">
                       <img alt="" src={user.photoURL} />
                     </button>
                   </div>
