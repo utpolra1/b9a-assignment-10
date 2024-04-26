@@ -17,6 +17,7 @@ import Register from './Components/User/Register.jsx';
 import Home from './Components/Home/Home.jsx';
 import AllArtCraft from './Components/CardIteams/AllArtCraft.jsx';
 import MyCart from './Components/CardIteams/MyCart.jsx';
+import CardDetails from './Components/CardIteams/CardDetails.jsx';
 
 
 const router = createBrowserRouter([
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path:"/allArt&craft",
         element:<AllArtCraft></AllArtCraft>
+      },
+      {
+        path:"carddetails/:_id",
+        element:<CardDetails></CardDetails>
       }
     ]
   },

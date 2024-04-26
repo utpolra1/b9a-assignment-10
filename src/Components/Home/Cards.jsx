@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Hooks from "../Hooks/Hooks";
 import { NavLink } from "react-router-dom";
 
 const Cards = ({ datas }) => {
+const [singleData, setSingleData] = useState();
   const {
     _id,
     item_name,
@@ -19,6 +20,13 @@ const Cards = ({ datas }) => {
   } = datas || {};
 
   const { data, loading } = Hooks();
+
+  useEffect(() => {
+    if (data) {
+      const singleData = data?.find((item) => item._id == _id);
+      setSingleData(singleData);
+    }
+  }, [data, _id]);
 
   return (
     <div>

@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { authContext } from "./Firebase/AuthProvider";
 
 const Addcraft = () => {
+  const {user}=useContext(authContext);
+  console.log(user?.email);
     const handleAddProduct=e=>{
         e.preventDefault();
 
@@ -15,8 +18,9 @@ const Addcraft = () => {
         const stockStatus=e.target.stockStatus.value;
         const userName=e.target.userName.value;
         const email=e.target.email.value;
+        const userEmail=user?.email;
 
-        const newProduct={item_name, subcategory_Name,image,shortdescription,price,customization,rating,processing_time,stockStatus,userName,email };
+        const newProduct={item_name, subcategory_Name,image,shortdescription,price,customization,rating,processing_time,stockStatus,userName,email,userEmail };
         console.log(newProduct);
 
         fetch("https://b9-a-assignment-10-server.vercel.app/product",{
