@@ -4,7 +4,6 @@ const Hooks = () => {
     
     const [data, setdata]=useState([]);
     const [loading, setLoading]=useState(true);
-    console.log(data),
 
     useEffect(()=>{
         const fetchData=async()=>{

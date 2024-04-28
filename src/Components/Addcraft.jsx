@@ -17,11 +17,10 @@ const Addcraft = () => {
         const processing_time=e.target.processing_time.value;
         const stockStatus=e.target.stockStatus.value;
         const userName=e.target.userName.value;
-        const email=e.target.email.value;
-        const userEmail=user?.email;
+        const useremail=e.target.useremail.value;
+        const email=user?.email;
 
         const newProduct={item_name, subcategory_Name,image,shortdescription,price,customization,rating,processing_time,stockStatus,userName,email,userEmail };
-        console.log(newProduct);
 
         fetch("https://b9-a-assignment-10-server.vercel.app/product",{
             method:'POST',
@@ -32,7 +31,7 @@ const Addcraft = () => {
         })
         .then(res=>res.json)
         .then(data=>{
-            console.log(data);
+          ;
         })
     }
   return (
@@ -167,7 +166,7 @@ const Addcraft = () => {
                   <span className="label-text">User Email</span>
                 </label>
                 <input
-                name="email"
+                name="useremail"
                   type="email"
                   placeholder="User Email"
                   className="input input-bordered"

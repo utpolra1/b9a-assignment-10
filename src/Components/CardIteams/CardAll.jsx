@@ -1,24 +1,44 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-const CardAll = ({datas}) => {
-    const {
-        _id,
-        item_name,
-        stockStatus,
-        userName,
-        subcategory_Name,
-        shortdescription,
-        rating,
-        price,
-        rocessing_time,
-        image,
-        customization,
-        email,
-      } = datas || {};
-    return (
-        <div>
-            <div
+const CardAll = ({ datas }) => {
+  const {
+    _id,
+    item_name,
+    stockStatus,
+    userName,
+    subcategory_Name,
+    shortdescription,
+    rating,
+    price,
+    rocessing_time,
+    image,
+    customization,
+    email,
+  } = datas || {};
+  return (
+    <div>
+
+<div className="overflow-x-auto">
+  <table className="table table-xs">
+    <tbody>
+      <tr className="items-center grid grid-cols-8">
+        <td><img className="w-20 h-20 rounded-md" src={image} alt="" /></td> 
+        <td>{item_name}</td> 
+        <td>{price}</td> 
+        <td>{rating}</td> 
+        <td>{customization}</td> 
+        <td>{stockStatus}</td>
+        <td>Update Now</td>
+        <td>Delete Now</td>
+      </tr>
+    </tbody> 
+  </table>
+</div>
+
+
+
+      {/* <div
         className="card w-96 border h-full shadow-xl"
         data-aos="zoom-in-down"
       >
@@ -47,9 +67,9 @@ const CardAll = ({datas}) => {
             </div>
           </div>
         </div>
-      </div>
-        </div>
-    );
+      </div> */}
+    </div>
+  );
 };
 
 export default CardAll;
