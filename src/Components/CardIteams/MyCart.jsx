@@ -18,7 +18,12 @@ const MyCart = () => {
 
   return (
     <div className="mt-7">
-      <div className="grid lg:grid-cols-3 gap-5 justify-center md:grid-cols-2">
+      {
+        loading ? (
+          <div className='items-center text-center'><span className="loading loading-spinner text-primary w-44"></span></div>
+        )
+        :(
+          <div className="grid lg:grid-cols-3 gap-5 justify-center md:grid-cols-2">
         {item?.map((item) => (
           <div>
             <div className="grid lg:grid-cols-3 gap-5 justify-center md:grid-cols-2">
@@ -62,6 +67,8 @@ const MyCart = () => {
           </div>
         ))}
       </div>
+        )
+      }
     </div>
   );
 };
