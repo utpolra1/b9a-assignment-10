@@ -42,7 +42,7 @@ const Navbar = () => {
               <NavLink to="about">Profile</NavLink>
             </ul>
           </div>
-          <NavLink to="/"><img className="w-36 h-14" src="https://i.ibb.co/NVp70jg/auto-painting-and-drawing-colored-paint-car-vector-44256933.jpg" alt="" /></NavLink>
+          <NavLink to="/"><img className="w-24 h-10" src="https://i.ibb.co/NVp70jg/auto-painting-and-drawing-colored-paint-car-vector-44256933.jpg" alt="" /></NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-4 font-bold">

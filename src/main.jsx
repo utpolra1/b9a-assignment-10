@@ -19,6 +19,7 @@ import AllArtCraft from './Components/CardIteams/AllArtCraft.jsx';
 import MyCart from './Components/CardIteams/MyCart.jsx';
 import CardDetails from './Components/CardIteams/CardDetails.jsx';
 import About from './Components/User/About.jsx';
+import PrivetRoute from './Components/PrivetRoute/PrivetRoute.jsx';
 
 
 const router = createBrowserRouter([
@@ -33,11 +34,11 @@ const router = createBrowserRouter([
       },
       {
         path:"/addcraft",
-        element:<Addcraft></Addcraft>
+        element:<PrivetRoute><Addcraft></Addcraft></PrivetRoute>
       },
       {
         path:"/mycart",
-        element:<MyCart></MyCart>,
+        element:<PrivetRoute><MyCart></MyCart></PrivetRoute>,
       },
       {
         path:"/login",
@@ -53,11 +54,11 @@ const router = createBrowserRouter([
       },
       {
         path:"carddetails/:_id",
-        element:<CardDetails></CardDetails>
+        element:<PrivetRoute><CardDetails></CardDetails></PrivetRoute>
       },
       {
         path:"/about",
-        element:<About></About>
+        element:<PrivetRoute><About></About></PrivetRoute>
       }
     ]
   },
