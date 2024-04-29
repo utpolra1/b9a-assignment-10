@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <div>
+            <div className='mb-20'>
             <div className='grid lg:grid-cols-3 gap-5 justify-center md:grid-cols-2'>
                 {
                 data.map(datas=><Cards key={datas.id} datas={datas}></Cards>)

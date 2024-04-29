@@ -7,19 +7,17 @@ const AllArtCraft = () => {
 
   return (
     <div>
-      <div className="mt-12">
+      <div className="">
         <div className="overflow-x-auto">
           <table className="table table-xs">
             <thead>
-              <tr className="items-center grid grid-cols-8">
+              <tr className="">
                 <th>Image</th>
                 <th>item_name</th>
                 <th>Price</th>
                 <th>Rating</th>
                 <th>Costomization</th>
                 <th>StockStatus</th>
-                <th>Update</th>
-                <th>Delete</th>
               </tr>
             </thead>
           </table>

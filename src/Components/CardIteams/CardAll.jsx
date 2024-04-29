@@ -18,25 +18,27 @@ const CardAll = ({ datas }) => {
   } = datas || {};
   return (
     <div>
-
-<div className="overflow-x-auto">
-  <table className="table table-xs">
-    <tbody>
-      <tr className="items-center grid grid-cols-8">
-        <td><img className="w-20 h-20 rounded-md" src={image} alt="" /></td> 
-        <td>{item_name}</td> 
-        <td>{price}</td> 
-        <td>{rating}</td> 
-        <td>{customization}</td> 
-        <td>{stockStatus}</td>
-        <td>Update Now</td>
-        <td>Delete Now</td>
-      </tr>
-    </tbody> 
-  </table>
-</div>
-
-
+      <div className="overflow-x-auto">
+        <table className="table table-xs">
+          <tbody>
+            <tr className="items-center grid grid-cols-8">
+              <td>
+                <img className="w-20 h-20 rounded-md" src={image} alt="" />
+              </td>
+              <td>{item_name}</td>
+              <td>{price}</td>
+              <td>{rating}</td>
+              <td>{customization}</td>
+              <td>{stockStatus}</td>
+              <td>
+                <NavLink to={`/carddetails/${_id}`}>
+                  <span className=" btn font-bold">View Property</span>
+                </NavLink>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       {/* <div
         className="card w-96 border h-full shadow-xl"

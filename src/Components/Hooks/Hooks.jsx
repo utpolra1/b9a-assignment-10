@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 const Hooks = () => {
     
     const [data, setdata]=useState([]);
+    console.log(data);
     const [loading, setLoading]=useState(true);
 
     useEffect(()=>{
