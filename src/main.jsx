@@ -20,13 +20,19 @@ import MyCart from './Components/CardIteams/MyCart.jsx';
 import CardDetails from './Components/CardIteams/CardDetails.jsx';
 import About from './Components/User/About.jsx';
 import PrivetRoute from './Components/PrivetRoute/PrivetRoute.jsx';
+import Navbar from './Components/Navbar/Navbar.jsx';
+import Footer from './Components/Footer/Footer.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement:<div>OPPS....!</div>,
+    errorElement:<div>
+      <Navbar></Navbar>
+      <div className='text-3xl font-extrabold text-red-500 items-center text-center my-32'> 404 page.... !</div>
+      <Footer></Footer>
+      </div>,
     children:[
       {
         path:"/",

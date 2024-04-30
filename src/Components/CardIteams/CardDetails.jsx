@@ -42,6 +42,7 @@ const CardDetails = () => {
                   <h1><span className="font-bold">Description: </span>{datas.shortdescription}</h1>
                   <h1><span className="font-bold">Price: </span>{datas.price}</h1>
                   <h1><span className="font-bold">Status: </span>{datas.stockStatus}</h1>
+                  <h1><span className="font-bold">Email: </span>{datas.email}</h1>
                   </div>
                 </div>
               </div>
