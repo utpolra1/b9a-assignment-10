@@ -36,21 +36,21 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <NavLink to="/">Home</NavLink>
-              <NavLink to="/allArt&craft">All Art & craft item</NavLink>
-              <NavLink to="/mycart">My Art&Craft List</NavLink>
-              <NavLink to="/addcraft">Add Craft Item</NavLink>
+              <NavLink to="/allArt&craft">All Art & craft</NavLink>
+              <NavLink to="/mycart">My Art&Craft</NavLink>
+              <NavLink to="/addcraft">Add Craft</NavLink>
               <NavLink to="about">Profile</NavLink>
             </ul>
           </div>
           <NavLink to="/"><img className="w-24 h-10" src="https://i.ibb.co/NVp70jg/auto-painting-and-drawing-colored-paint-car-vector-44256933.jpg" alt="" /></NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 gap-4 font-bold">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/allArt&craft">All Art & craft item</NavLink>
-            <NavLink to="/mycart">My Art&Craft List</NavLink>
-            <NavLink to="/addcraft">Add Craft Item</NavLink>
-            <NavLink to="about">Profile</NavLink>
+          <ul className="menu menu-horizontal px-1 gap-4 font-bold text-base">
+            <NavLink to="/"><span className="btn-outline">Home</span></NavLink>
+            <NavLink to="/allArt&craft"><span className="btn-outline ">All Art & craft</span></NavLink>
+            <NavLink to="/mycart"><span className="btn-outline">My Art&Craft</span></NavLink>
+            <NavLink to="/addcraft"><span className="btn-outline ">Add Craft</span></NavLink>
+            <NavLink to="about"><span className="btn-outline">Profile</span></NavLink>
           </ul>
         </div>
         <div className="navbar-end text-2xl font-bold mr-4">

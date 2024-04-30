@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 const flowbite = require("flowbite-react/tailwind");
-
 const withMT = require("@material-tailwind/react/utils/withMT");
+
+
 // export default {
 //   content: [
 //     "./index.html",
