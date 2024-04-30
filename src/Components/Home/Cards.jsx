@@ -50,6 +50,7 @@ const [singleData, setSingleData] = useState();
               <span className="font-bold">Status: </span>
               {stockStatus}
             </h1>
+            <h1><span className="font-bold">customization: </span>{customization}</h1>
           </div>
           <div className="flex items-center justify-between">
             <div className="">

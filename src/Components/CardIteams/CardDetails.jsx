@@ -39,10 +39,15 @@ const CardDetails = () => {
                   <div className="flex flex-col gap-5 pl-3">
                   <h2 className="card-title mt-10">{datas.item_name}</h2>
                   <h1 className="font-bold">Segment_name: {datas.subcategory_Name}</h1>
+                  <h1><span className="font-bold">UserName: </span>{datas?.userName}</h1>
                   <h1><span className="font-bold">Description: </span>{datas.shortdescription}</h1>
                   <h1><span className="font-bold">Price: </span>{datas.price}</h1>
                   <h1><span className="font-bold">Status: </span>{datas.stockStatus}</h1>
                   <h1><span className="font-bold">Email: </span>{datas.email}</h1>
+                  <h1><span className="font-bold">Customization: </span>{datas?.customization}</h1>
+                  <h1><span className="font-bold">Processing_time: </span>{datas?.processing_time}</h1>
+                  <h1><span className="font-bold">Rating: </span>{datas?.rating}</h1>
+
                   </div>
                 </div>
               </div>

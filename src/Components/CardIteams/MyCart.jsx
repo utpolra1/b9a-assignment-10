@@ -95,6 +95,7 @@ const MyCart = () => {
                         <span className="font-bold">Status: </span>
                         {item?.stockStatus}
                       </h1>
+                      <h1><span className="font-bold">Customization: </span>{item?.customization}</h1>
                     </div>
                     <div className="flex items-center justify-between">
                       <div className="">
@@ -102,13 +103,14 @@ const MyCart = () => {
                           <span className=" btn font-bold">View Property</span>
                         </NavLink>
                       </div>
-                      <div>
+                      <div className="">
                         <button
                           onClick={() => handleDelte(item?._id)}
                           className="btn"
                         >
                           Delete
                         </button>
+                        <button className="btn ml-2">Update</button>
                       </div>
                     </div>
                   </div>
