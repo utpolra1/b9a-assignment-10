@@ -81,7 +81,7 @@ const GithubLogin =async () => {
                    className="input input-bordered relative"
                    required
                  />
-                 <span className="absolute pt-[50px] ml-72" onClick={()=>setShowpassword(!showPassword)}></span>
+                 <span className="absolute pt-[50px] ml-72" onClick={()=>setShowpassword(!showPassword)}><FaEye></FaEye></span>
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">
                     Forgot password?
