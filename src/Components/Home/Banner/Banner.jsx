@@ -3,7 +3,7 @@ import { Carousel } from "flowbite-react";
 
 const Banner = () => {
   return (
-    <div className="mt-7 mb-20">
+    <div className="mt-5 mb-20">
       <div className="h-56 sm:h-64 xl:h-[700px] 2xl:h-96">
         <Carousel
           onSlideChange={(index) => console.log("onSlideChange()", index)}
@@ -67,11 +67,11 @@ const Banner = () => {
         </Carousel>
       </div>
       <div className="mt-10">
-        <h1 className="font-extrabold items-center justify-center flex">
-          Best Product{" "}
+        <h1 className="font-extrabold text-3xl items-center justify-center flex">
+          Best Product Art & Craft
         </h1>
       </div>
-      <div className="grid lg:grid-cols-4 mt-5 items-center gap-5 justify-center">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 mt-5 items-center gap-5 justify-center">
         <div className="flex flex-col justify-center items-center">
           <img
             className="w-64 h-84 rounded-xl shadow-md"

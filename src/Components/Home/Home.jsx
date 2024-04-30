@@ -23,7 +23,7 @@ const Home = () => {
           </div>
         )}
       </div>
-      <div className="grid lg:grid-cols-5 mb-10 shadow-xl justify-center">
+      <div className="grid md:grid-cols-3 lg:grid-cols-5 mb-10 shadow-xl justify-center">
         <img src="https://i.ibb.co/Hz8B93Y/02-4.png" alt="" />
         <img src="https://i.ibb.co/zsF3Mv8/01-1.png" alt="" />
         <img src="https://i.ibb.co/pWBzd3H/06-1.png" alt="" />

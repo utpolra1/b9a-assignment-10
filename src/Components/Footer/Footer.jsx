@@ -4,13 +4,13 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
-      <footer className="footer p-10 bg-base-300 text-base-content">
+      <footer className="footer p-10 bg-base-300 text-base-content items-center">
         <nav>
             <a className="footer-title" href="">Services</a>
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/allArt&craft">All Art & craft item</NavLink>
-            <NavLink to="/mycart">My Art&Craft List</NavLink>
-            <NavLink to="/addcraft">Add Craft Item</NavLink>
+            <NavLink to="/allArt&craft">All Art & craft</NavLink>
+            <NavLink to="/mycart">My Art&Craft</NavLink>
+            <NavLink to="/addcraft">Add Craft</NavLink>
         </nav>
         <nav>
           <h6 className="footer-title">Company</h6>
@@ -60,7 +60,7 @@ const Footer = () => {
       </footer>
       <footer className="footer footer-center p-4 bg-base-300 text-base-content">
         <aside>
-          <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+          <p>Copyright © 2024 - All right reserved by Arts and Crafts</p>
         </aside>
       </footer>
     </footer>

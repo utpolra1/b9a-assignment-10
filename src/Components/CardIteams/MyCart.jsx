@@ -59,7 +59,7 @@ const MyCart = () => {
   };
 
   return (
-    <div className="mt-7">
+    <div className="mt-7 mb-8">
       {loading ? (
         <div className="items-center text-center">
           <span className="loading loading-spinner text-primary w-44"></span>

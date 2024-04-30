@@ -6,14 +6,14 @@ const AllArtCraft = () => {
   const { data, loading } = Hooks();
 
   return (
-    <div>
+    <div className="my-10">
       {loading ? (
         <div className="text-primary">
           <div className='items-center text-center'><span className="loading loading-spinner text-primary w-44"></span></div>
         </div>
       ) : (
-        <div className="">
-          <div className="overflow-x-auto">
+        <div className="items-center">
+          <div className="overflow-x-auto ">
             <table className="table table-xs">
               <thead>
                 <tr className="">
